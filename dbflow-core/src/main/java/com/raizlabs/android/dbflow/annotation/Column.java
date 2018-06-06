@@ -9,7 +9,7 @@ import java.lang.annotation.Target;
  * Description: Marks a field as corresponding to a column in the DB.
  * When adding new columns or changing names, you need to define a new {@link Migration}.
  */
-@Retention(RetentionPolicy.SOURCE)
+@Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.FIELD)
 public @interface Column {
 
